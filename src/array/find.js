@@ -4,5 +4,7 @@ function find (iteratee, handler, context) {
     	return iteratee[i]
     }
   }
+
+  return null
 }
 module.exports = find

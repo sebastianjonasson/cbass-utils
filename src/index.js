@@ -1,4 +1,4 @@
-window.cu = {
+module.exports = {
   deepClone: require('./deep-clone.js'),
   foreach: require('./array/foreach.js'),
   map: require('./array/map.js'),
