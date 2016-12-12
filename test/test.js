@@ -98,9 +98,22 @@ describe('Array', function() {
   		expect(context.sum).to.eql(SUM)
   	})
 
-     describe('find', function() {
-     	it('should return values ')
-     })
    })
+
+	describe('shuffle', function () {
+		it('should not be in the same order', function() {
+			var isEqual = true;
+			var shuffledList = utils.shuffle(list);
+			
+			for (var i = 0; i < list.length; i++) {
+				if(list[i] != shuffledList[i]) {
+					isEqual = false;
+					break;
+				}
+			}
+
+			expect(isEqual).to.equal(false);
+		})
+	})
 
 });

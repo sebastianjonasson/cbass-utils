@@ -14,7 +14,7 @@ function clone (obj) {
       _obj[i] = clone(obj[i])
     }
 
-    return obj
+    return _obj
   }
 
   // Else iterate object keys.
