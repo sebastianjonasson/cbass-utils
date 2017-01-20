@@ -14,5 +14,7 @@ function map(list, handler, context) {
 		handler.call(context, item)
 	)
 
-	return map(list, handler, context).concat(output);
+	return [...map(list, handler, context), ...output];
 }
+
+console.log(map([1,2,3], function(i) { return i * 2}))
