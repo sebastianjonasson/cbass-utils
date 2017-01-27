@@ -2,16 +2,16 @@ var getRandomInt = require('../math/get-random-int.js');
 var clone = require('../deep-clone.js')
 
 function shuffle (list, repeats, count) {
-	var count = 0, swapIndex, value1, value2;
+  var count = 0, swapIndex, value1, value2;
 
-	list = clone(list);
+  list = clone(list);
 
-	if (Array.isArray(list) === false || list.length === 0) {
-		return [];
-	}
+  if (Array.isArray(list) === false || list.length === 0) {
+    return [];
+  }
 
-	repeats = repeats || 20;
-	count = 0;
+  repeats = repeats || 20;
+  count = 0;
 
   return (function shuffleArr(list, repeats, count) {
     for (var i = 0; i < list.length; i++) {
