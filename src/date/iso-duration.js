@@ -33,8 +33,8 @@ function ISODuration (date, duration) {
     
     date[setter](value);
   }
-
-	return date;
+	
+  return date;
 }
 
 module.exports = ISODuration
