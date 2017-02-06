@@ -5,5 +5,6 @@ module.exports = {
   filter: require('./array/filter.js'),
   find: require('./array/find.js'),
   shuffle: require('./array/shuffle.js'),
-  getRandomInt: require('./math/get-random-int.js')
+  getRandomInt: require('./math/get-random-int.js'),
+	setISODuration: require('./date/iso-duration.js')
 }
